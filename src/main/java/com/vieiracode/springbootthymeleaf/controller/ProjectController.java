@@ -16,7 +16,7 @@ import com.vieiracode.springbootthymeleaf.service.UserService;
 
 @Controller
 public class ProjectController {
-	
+
 	@Autowired
 	UserService userService;
 
@@ -28,9 +28,9 @@ public class ProjectController {
 
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public ModelAndView save(@ModelAttribute User user) {
-		
+
 		ModelAndView modelAndView = new ModelAndView();
-		
+
 		modelAndView.setViewName("user-page");
 		modelAndView.addObject("user", user);
 		userService.save(user);
