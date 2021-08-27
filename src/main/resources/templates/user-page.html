@@ -1,0 +1,44 @@
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<body>
+	<table>
+		<tr>
+			<td>
+				<h4>Id:</h4>
+			</td>
+			<td>
+				<h4 th:text="${user.userId}"></h4>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h4>Name:</h4>
+			</td>
+			<td>
+				<h4 th:text="${user.name}"></h4>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h4>Email:</h4>
+			</td>
+			<td>
+				<h4 th:text="${user.email}"></h4>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h4>Password:</h4>
+			</td>
+			<td>
+				<h4 th:text="${user.password}"></h4>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<a href="/"><input type="button" value="Home"></input></a>
+			</td>
+			
+		</tr>
+	</table>
+</body>
+</html>
